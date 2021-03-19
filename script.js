@@ -27,7 +27,7 @@ selectBtnO.onclick = () => {
 
 let playerXIcon = "fas fa-times";
 let playerOIcon = "far fa-circle";
-let playerSign = "X"; //this is a global variable beacuse we've used this variable inside multiple functions
+let playerSign = "X"; 
 let runBot = true; //this also a global variable with boolen value..we used this variable to stop the bot once match won by someone or drawn
 
 // user click function
@@ -77,7 +77,7 @@ function bot() {
         }
         allBox[randomBox].style.pointerEvents = "none"; //once bot select any box then user can't click on that box
         playBoard.style.pointerEvents = "auto"; //add pointerEvents auto in playboard so user can again click on box
-        playerSign = "X"; //if player has chosen X then bot will be O right then we change the playerSign again to X so user will X because above we have changed the playerSign to O for bot
+        playerSign = "X"; 
     }
 }
 
